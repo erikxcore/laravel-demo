@@ -19,7 +19,7 @@ class PostController extends Controller
     public function index()
     {
         $client = new Client();
-        $res = $client->request('get', 'http://ny-go-oss6391:8351/api/posts');
+        $res = $client->request('get', 'https://immense-gorge-22729.herokuapp.com/api/posts');
         echo $res->getStatusCode();
         // "200"
         //echo $res->getHeader('content-type');
@@ -62,7 +62,7 @@ class PostController extends Controller
     {
 
         $client = new Client();
-        $res = $client->request('get', 'http://ny-go-oss6391:8351/api/posts/' . $id);
+        $res = $client->request('get', 'https://immense-gorge-22729.herokuapp.com/api/posts/' . $id);
         //echo $res->getStatusCode();
         // "200"
         //echo $res->getHeader('content-type');
