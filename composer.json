@@ -16,15 +16,15 @@
     },
     "autoload": {
         "classmap": [
-            "database"
+            "laravel/database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "laravel/app/"
         }
     },
     "autoload-dev": {
         "classmap": [
-            "tests/TestCase.php"
+            "laravel/tests/TestCase.php"
         ]
     },
     "scripts": {
