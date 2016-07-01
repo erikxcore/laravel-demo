@@ -11,15 +11,15 @@ WAMP/LAMP environment - or generally anything that can hold a PHP server
 Composer (PHP Module) - Required to build Laravel, not needed directly because this step has been done though if you wanted to use artisan to generate migrations, etc. it would be required.
 
 To get started:
-If you have a Vagrant box setup, move to your /var/www/public/ directory, then:
+If you have a Vagrant box setup, move to your /var/www/public/ directory (otherwise navigate to your htdocs folder for Apache, etc. Laravel has it's own requirements that will need to be met, as well), then:
 
-git clone git@github.com:erikxcore/laravel-demo.git;
+git clone git@github.com:erikxcore/laravel-demo.git
 
-mkdir laravel;cd laravel;
+mkdir laravel; cd laravel
 
-git clone -b laravel git@github.com:erikxcore/laravel-demo.git ./;
+git clone -b laravel git@github.com:erikxcore/laravel-demo.git ./
 
-cd ..;
+cd ..
 
 npm install (not neccesarily required to run)
 
@@ -28,6 +28,8 @@ cd laravel
 composer install (generates vendor folder)
 
 cp .env.example .env
+
+You will need to modify your Apache's server's default configuration to point a Virtual Host to /var/www/public/laravel-demo/laravel/public/ (path may differ), otherwise you will typically only see directory structures of folders.
 
 
 Originally this project only existed in the master branch, but due to deployment to Heroku a seperate branch was required to properlly run composer install. Currently the master branch is used only to generate SASS quickly and deploy into the Laravel folder and to create a production-ready folder for deployment. Gulp was used on the master branch to pull in some extra dependecies, such as the USWDS CSS framework into Laravel.
