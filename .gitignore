@@ -1,5 +1,6 @@
-/vendor
-/node_modules
+#/vendor
+#/node_modules
+#Above uncommented due to deployment to Heroku
 Homestead.yaml
 Homestead.json
 .env
