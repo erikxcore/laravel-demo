@@ -1,4 +1,5 @@
-/vendor
+vendor/
+vendor/*
 #Above uncommented due to deployment to Heroku
 Homestead.yaml
 Homestead.json
