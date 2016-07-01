@@ -2,7 +2,7 @@
   "name": "laravel-demo",
   "version": "0.0.1",
   "description": "simple demo of laravel",
-  "main": "laravel/",
+  "main": "laravel/public/index.php",
   "author": "Eric Barber",
   "license": "ISC",
   "devDependencies": {
