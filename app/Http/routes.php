@@ -11,10 +11,13 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
+Route::get('/','PostController@index');
 
 // route to show the login form
 //Route::get('login', array('uses' => 'HomeController@showLogin'));

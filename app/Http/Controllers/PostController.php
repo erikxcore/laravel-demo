@@ -9,6 +9,7 @@ use App\Post;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+//Issues with HTTPS and Mediacom's firewall
 class PostController extends Controller
 {
     /**
@@ -19,16 +20,21 @@ class PostController extends Controller
     public function index()
     {
         $client = new Client();
-        $res = $client->request('get', 'https://immense-gorge-22729.herokuapp.com/api/posts');
-        echo $res->getStatusCode();
+        $res = $client->request('get', 'http://immense-gorge-22729.herokuapp.com/api/posts');
+        //echo $res->getStatusCode();
         // "200"
         //echo $res->getHeader('content-type');
         // 'application/json; charset=utf8'
-        echo $res->getBody();
+        //echo $res->getBody();
 
         //$post=Post::find($id);
         //return view('posts.index');
         //we have JSON!!
+
+        $posts= json_decode($res->getBody());
+
+        return view('posts.index',compact('posts'));
+
     }
 
     /**
@@ -62,7 +68,7 @@ class PostController extends Controller
     {
 
         $client = new Client();
-        $res = $client->request('get', 'https://immense-gorge-22729.herokuapp.com/api/posts/' . $id);
+        $res = $client->request('get', 'http://immense-gorge-22729.herokuapp.com/api/posts/' . $id);
         //echo $res->getStatusCode();
         // "200"
         //echo $res->getHeader('content-type');

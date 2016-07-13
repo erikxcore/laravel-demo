@@ -1,3 +1,48 @@
 #test {
   color: black;
   font-weight: bold; }
+body{
+	background:#f1f1f1;
+}
+
+.mcc-footer-contact_info a:hover{
+  color:white;
+}
+
+a:hover{
+  cursor:pointer;
+}
+
+#main{
+  background-color:white;
+}
+
+.mcc-footer,.mcc-footer-primary-section{
+  background-color:#3d4a88;
+}
+
+.mcc-footer-return-to-top a{ 
+  color:white;
+  text-decoration:none;
+}
+
+.mcc-footer-return-to-top a:hover{
+  text-decoration:underline;
+}
+
+.mcc-footer .mcc-footer-primary-link{
+  color: #d6d7d9;
+}
+
+.mcc-header{
+  background-color:white;
+}
+
+span.crumb{
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    clear:both;
+    float:left;
+}
