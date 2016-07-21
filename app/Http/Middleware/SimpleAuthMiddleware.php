@@ -5,7 +5,7 @@ use Log;
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
-class simpleAuthMiddleware
+class SimpleAuthMiddleware
 {
 
     protected $auth;
