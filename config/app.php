@@ -148,6 +148,8 @@ return [
         /* Extra */
         Collective\Html\HtmlServiceProvider::class,
 
+        App\Providers\CustomAuthProvider::class,
+
     ],
 
     /*

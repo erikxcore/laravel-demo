@@ -8,10 +8,26 @@ use App\Post;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Log;
 
-//Issues with HTTPS and Mediacom's firewall
+//Issues with HTTPS and Mediacom's firewall hence usage of HTTP from Heroku
 class PostController extends Controller
 {
+
+    public function __construct()
+    {
+        //$this->middleware('auth');
+
+        //$this->middleware('log', ['only' => ['fooAction', 'barAction']]);
+
+        //$this->middleware('subscribed', ['except' => ['fooAction', 'barAction']]);
+
+        //Log::info("Starting middleware...");
+        $this->middleware('simpleauth', ['except' => ['index']]);
+
+
+    }
+
     /**
      * Display a listing of the resource.
      *

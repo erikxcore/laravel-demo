@@ -8,7 +8,6 @@
  
  @foreach ($posts as $post)
  <a href="/posts/{{ $post->_id }}"><span class="crumb">Post {{ $post->_id }}</span></a>
-
  	  <table class="mcc-table-borderless">
  	  	<tbody>
 	         <tr>

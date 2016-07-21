@@ -16,12 +16,11 @@
             <li class="mcc-width-one-fourth mcc-footer-primary-content">
               <a class="mcc-footer-primary-link" href="/posts">Posts</a>
             </li>
+            <!--
             <li class="mcc-width-one-fourth mcc-footer-primary-content">
               <a class="mcc-footer-primary-link" href="#">Register</a>
             </li>
-            <li class="mcc-width-one-fourth mcc-footer-primary-content">
-              <a class="mcc-footer-primary-link" href="#">Logout</a>
-            </li>
+            -->
           </ul>
         </nav>
         <div class="mcc-width-one-third">

@@ -18,14 +18,14 @@
               <a class="mcc-header-primary-link" href="/auth/register">Register</a>
             </li>
             -->
+            <!--
             <li class="mcc-width-one-sixth mcc-header-primary-content">
               <a class="mcc-header-primary-link" href="/auth/login">Login</a>
             </li>
-            <!--
-            <li class="mcc-width-one-sixth mcc-header-primary-content">
-              <a class="mcc-header-primary-link" href="#">Logout</a>
-            </li>
             -->
+            <li class="mcc-width-one-sixth mcc-header-primary-content">
+              <a class="mcc-header-primary-link" href="{{url('/auth/logout')}}">Logout</a>
+            </li>
           </ul>
         </nav>
       </div>

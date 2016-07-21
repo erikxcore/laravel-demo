@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Log;
 use Illuminate\Contracts\Auth\Guard;
 
 class RedirectIfAuthenticated
@@ -35,7 +36,9 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next)
     {
         if ($this->auth->check()) {
-            return redirect('/');
+            //Log::info("Redirecting to " . $this->redirectPath());
+            return redirect()->intended($this->redirectPath());
+            //return redirect('/');
         }
 
         return $next($request);

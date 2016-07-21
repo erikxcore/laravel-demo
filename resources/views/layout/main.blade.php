@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
 
-	@if ($post)
-		<title>Post - {{ $post->_id }}</title>
-    @else
-        <title>Post Viewer</title>
-	@endif
+	<title>Welcome</title>
 
 	@include('includes.head')
 
@@ -22,7 +18,7 @@
                     @include('includes.headerLoggedIn')
                 @else
                     @include('includes.header')
-                @endif
+                @endif			
             </div>
     	</div>
 

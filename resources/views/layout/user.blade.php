@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
 
-	@if ($post)
-		<title>Post - {{ $post->_id }}</title>
-    @else
-        <title>Post Viewer</title>
-	@endif
+	<title>Login & Registration</title>
 
 	@include('includes.head')
 
@@ -23,7 +19,7 @@
                 @else
                     @include('includes.header')
                 @endif
-            </div>
+			</div>
     	</div>
 
     	<div id="main" class="mcc-grid">
